@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Введіть дані</title>
+</head>
+<body>
+    <h1>Введіть дані</h1>
+    <img src="{{ url_for('static', filename='input.jpg') }}">
+    <form method="POST" action="/calculate">
+        <label for="a">a^2:</label>
+        <input type="text" id="a" name="a" required>
+        <br>
+        <label for="n">n:</label>
+        <input type="text" id="n" name="n" required>
+        <br>
+        <label for="m">m:</label>
+        <input type="text" id="m" name="m" required>
+        <br>
+        <label for="l">l:</label>
+        <input type="text" id="l" name="l" required>
+        <br>
+        <label for="t0">t0:</label>
+        <input type="text" id="t0" name="t0" required>
+        <br>
+        <label for="phi">phi(t):</label>
+        <input type="text" id="phi" name="phi" required>
+        <br>
+        <label for="psi">psi(t):</label>
+        <input type="text" id="psi" name="psi" required>
+        <br>
+        <label for="f">f(x):</label>
+        <input type="text" id="f" name="f" required>
+        <br>
+        <input type="submit" value="Обчислити">
+    </form>
+</body>
+</html>
